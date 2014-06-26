@@ -21,7 +21,8 @@ def boardLIST():
 def boardPOSTS():
     base_url = 'https://a.4cdn.org/'
     boardPICK = str(input('Pick a board: '))
-    final = base_url + boardPICK + '/1.json'
+    pageNUM = str(input('Pick page number: '))
+    final = base_url + boardPICK + '/' + pageNUM + '.json'
     jawchan = requests.request('get', final).json()
 
     #print(jawchan)
