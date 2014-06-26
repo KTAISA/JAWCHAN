@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 def boardLIST():
     base_url = 'https://a.4cdn.org/boards.json'
     jawLIST = requests.request('get', base_url).json()
-    print(jawLIST)
+    #print(jawLIST)
     bLIST = jawLIST['boards']
 
     for i in range(len(bLIST)):
@@ -67,6 +67,7 @@ def threadPOSTS():
 
 def menu():
     print('------------------------------------------------')
+    print('JAWCHAN')
     print('1 - Board List')
     print('2 - Board Posts')
     print('3 - Thread Review')
