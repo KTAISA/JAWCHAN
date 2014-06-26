@@ -3,4 +3,4 @@ JAWCHAN
 
 CHAN API practice
 
-figure it out
+python 3 bitches
